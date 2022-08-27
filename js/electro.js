@@ -1,5 +1,5 @@
 
-// localStorage.clear();
+localStorage.clear();
 /* Add Top SELLING Section */
 let myCarousal = document.querySelector(".porducts").cloneNode(1);
 let contact = document.getElementById('contact');
