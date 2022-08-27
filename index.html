@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/electro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@200;400;500;600;700&family=Nunito:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Title Icon -->
+    <link rel="Icon" type="image/x-icon" href="imgs/bag-shopping-solid (1).svg">
+</head>
+<body onload="addFromLocalStorage()">
+    <!-- Start Header -->
+    <header>
+        <div class="top-header">
+            <div class="container d-flex flex-lg-row flex-sm-column justify-content-between">
+                    <div class="contact">
+                        <a href="#" class="text-light me-3 text-decoration-none">
+                            <i class="fa-solid fa-phone"></i>&ThinSpace;
+                            <span> +021-95-51-84</span>
+                        </a>
+                        <a href="#" class="text-light me-3 text-decoration-none">
+                            <i class="fa-regular fa-envelope"></i>&ThinSpace;
+                            <span> email@email.com</span>
+                        </a>
+                        <a href="#" class="text-light me-3 text-decoration-none">
+                            <i class="fa-solid fa-location-dot"></i>&ThinSpace;
+                            <span> 1734 Stonecoal Road</span>
+                        </a>
+                    </div>
+                    <div class="account">
+                        <a href="#" class="text-light me-3 text-decoration-none">
+                            <i class="fa-solid fa-dollar-sign"></i>&ThinSpace;
+                            <span> USA</span>
+                        </a>
+                        <a href="#" class="text-light me-3 text-decoration-none">
+                            <i class="fa-solid fa-user"></i>&ThinSpace;
+                            <span> My Account</span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="logo col-12 text-center col-lg-3 mb-4 mb-lg-0">
+                        <a href="#"><img class="img-fluid" src="imgs/download.webp" alt=""></a>
+                    </div>
+                    <form method="post" class="my-from col-12 col-lg-6 p-0 d-flex ps-3 pe-3 mb-4 mb-lg-0">
+                        <select class="ps-3" name="category">
+                            <option>All Categories</option>
+                            <option>Category 01</option>
+                            <option>Category 02</option>
+                        </select>
+                        <input class="" type="text" placeholder="Search here">
+                        <input class="text-white fw-bold fs-6 w-25" type="submit" value="Search">
+                    </form>
+                    <div class="box col-lg-3 col-sm-12 d-flex justify-content-end text-center align-items-center ms-sm-auto">
+                        <a href="#" class="liked text-white text-decoration-none">
+                            <span data-number="1" class="num position-relative"><i class="fa-regular fa-heart"></i></span>
+                            <p>Your Wishlist</p>
+                        </a>
+                        <a href="#" class="cart text-white text-decoration-none ms-3">
+                            <span data-number="0" class="num position-relative"><i class="fa-solid fa-cart-shopping"></i></span>
+                            <p>Your Cart</p>
+                        </a>
+                        <span class="bar cart text-white text-decoration-none ms-3 d-lg-none">
+                            <i class="fa-solid fa-bars fs-4 "></i>
+                            <p>Menu</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Navbar -->
+    <nav class="main-nav pt-2 pb-2" id="main-nav">
+        <div class="logo col-12 text-center col-lg-3 mb-4 mb-lg-0 d-lg-none logo-in-nav">
+            <a href="#"><img class="img-fluid" src="imgs/download.webp" alt=""></a>
+        </div>
+        <div class="container">
+            <ul class="nav justify-content-start">
+                <li class="">
+                    <a class="nav-link active position-relative ps-0 pe-0 me-4" aria-current="page" href="#"><span>Home</span></a>
+                </li>
+                <li class="">
+                    <a class="nav-link position-relative ps-0 pe-0 me-4" href="#"><span>Hot Deals</span></a>
+                </li>
+                <li class="nav-">
+                    <a class="nav-link position-relative ps-0 pe-0 me-4" href="#"><span>Categories</span></a>
+                </li>
+                <li class="nav-">
+                    <a class="nav-link position-relative ps-0 pe-0 me-4" href="#"><span>Laptops</span></a>
+                </li>
+                <li class="nav-">
+                    <a class="nav-link position-relative ps-0 pe-0 me-4" href="#"><span>Smartphones</span></a>
+                </li>
+                <li class="nav-">
+                    <a class="nav-link position-relative ps-0 pe-0 me-4" href="#"><span>Cameras</span></a>
+                </li>
+                <li class="nav-">
+                    <a class="nav-link position-relative ps-0 pe-0 me-4" href="#"><span>Accessories</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Categories -->
+    <section class="Categories pt-5 pb-5">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="cate position-relative p-0 ">
+                    <img class="img-fluid" src="imgs/xshop01.png.pagespeed.ic.YgJRjyP3IB.png" alt="">
+                    <div class="box position-absolute top-0 left-0 p-4 text-center text-white">
+                        <h2 class="fs-4 fw-bold mt-3 w-50 text-start">Laptop Collection</h2>
+                        <span class="d-block w-50 text-start text-uppercase">shop now &nbsp;<i class="fa-solid fa-circle-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="cate position-relative p-0">
+                    <img class="img-fluid" src="imgs/xshop03.png.pagespeed.ic.7lsQL1UJA9.png" alt="">
+                    <div class="box position-absolute top-0 left-0 p-4 text-center text-white">
+                        <h2 class="fs-4 fw-bold mt-3 w-50 text-start">Accessories Collection</h2>
+                        <span class="d-block w-50 text-start text-uppercase">shop now &nbsp;<i class="fa-solid fa-circle-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="cate position-relative p-0">
+                    <img class="img-fluid" src="imgs/xshop02.png.pagespeed.ic.JMo4guOhuU.png" alt="">
+                    <div class="box position-absolute top-0 left-0 p-4 text-center text-white">
+                        <h2 class="fs-4 fw-bold mt-3 w-50 text-start">Cameras Collection</h2>
+                        <span class="d-block w-50 text-start text-uppercase">shop now &nbsp;<i class="fa-solid fa-circle-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Categories -->
+    <!-- Start porducts -->
+    <div class="porducts pt-5">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <h2 class="section-heading text-uppercase fw-bold fs-4 col-md-4 p-0 m-0 mb-sm-3 mb-md-0">new products</h2>
+                <div id="filter-products" class="main-nav col-md-6 p-0 ">
+                    <ul class="nav">
+                        <li class="">
+                            <a class="nav-link active position-relative ps-0 pe-0 me-4 fw-bold" aria-current="page" href="#"><span>Laptops</span></a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link position-relative ps-0 pe-0 me-4 fw-bold" href="#"><span>Smartphones</span></a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link position-relative ps-0 pe-0 me-4 fw-bold" href="#"><span>Camersa</span></a>
+                        </li>
+                        <li class="">
+                            <a class="nav-link position-relative ps-0 pe-0 fw-bold" href="#"><span>Accessories</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel pt-5 pb-5">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-around">
+                                <div class="box position-relative">
+                                    <div class="imag position-relative" data-new="NEW" data-category="CATEGORY">
+                                        <img src="imgs/xproduct05.png.pagespeed.ic.THq_JuCB2a.webp" class="d-block w-100 " alt="...">
+                                    </div>
+                                    <h3 class="fw-bold prod-name">Product Name Here</h3>
+                                    <p class="prod-price fw-bold fs-5">$980.00</p>
+                                    <div class="favorite pt-3 pb-3 text-center"><i class="fa-solid fa-heart fs-5" title="Add to favorite"></i></div>
+                                    <div class="add-cart w-100 text-center position-absolute p-2">
+                                        <button class="w-75 rounded-pill p-2 text-light fw-bold text-uppercase"><i class="me-2 fa-solid fa-cart-shopping"></i> add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="box position-relative">
+                                    <div class="imag position-relative" data-new="SOLD" data-category="CATEGORY">
+                                        <img src="imgs/xproduct04.png.pagespeed.ic.Nmz_g7OX-H.png" class="d-block w-100 " alt="...">
+                                    </div>
+                                    <h3 class="fw-bold prod-name">Product Name Here</h3>
+                                    <p class="prod-price fw-bold fs-5">$980.00</p>
+                                    <div class="favorite pt-3 pb-3 text-center"><i class="fa-solid fa-heart fs-5" title="Add to favorite"></i></div>
+                                    <div class="add-cart w-100 text-center position-absolute p-2">
+                                        <button class="w-75 rounded-pill p-2 text-light fw-bold text-uppercase"><i class="me-3 fa-solid fa-cart-shopping"></i> add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="box position-relative">
+                                    <div class="imag position-relative" data-category="CATEGORY">
+                                        <img src="imgs/xproduct03.png.pagespeed.ic.cQrB7wvQ5E.webp" class="d-block w-100 " alt="...">
+                                    </div>
+                                    <h3 class="fw-bold prod-name">Product Name Here</h3>
+                                    <p class="prod-price fw-bold fs-5">$980.00</p>
+                                    <div class="favorite pt-3 pb-3 text-center"><i class="fa-solid fa-heart fs-5" title="Add to favorite"></i></div>
+                                    <div class="add-cart w-100 text-center position-absolute p-2">
+                                        <button class="w-75 rounded-pill p-2 text-light fw-bold text-uppercase"><i class="me-3 fa-solid fa-cart-shopping"></i> add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="box position-relative">
+                                    <div class="imag position-relative" data-new="NEW" data-category="CATEGORY">
+                                        <img src="imgs/xproduct02.png.pagespeed.ic.zbvcFh0rRy.webp" class="d-block w-100 " alt="...">
+                                    </div>
+                                    <h3 class="fw-bold prod-name">Product Name Here</h3>
+                                    <p class="prod-price fw-bold fs-5">$980.00</p>
+                                    <div class="favorite pt-3 pb-3 text-center"><i class="fa-solid fa-heart fs-5" title="Add to favorite"></i></div>
+                                    <div class="add-cart w-100 text-center position-absolute p-2">
+                                        <button class="w-75 rounded-pill p-2 text-light fw-bold text-uppercase"><i class="me-3 fa-solid fa-cart-shopping"></i> add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-around">
+                                <div class="box position-relative">
+                                    <div class="imag position-relative" data-new="SOLD" data-category="CATEGORY">
+                                        <img src="imgs/xproduct01.png.pagespeed.ic.flJc5JT8yl.webp" class="d-block w-100 " alt="...">
+                                    </div>
+                                    <h3 class="fw-bold prod-name">Product Name Here</h3>
+                                    <p class="prod-price fw-bold fs-5">$980.00</p>
+                                    <div class="favorite pt-3 pb-3 text-center"><i class="fa-solid fa-heart fs-5" title="Add to favorite"></i></div>
+                                    <div class="add-cart w-100 text-center position-absolute p-2">
+                                        <button class="w-75 rounded-pill p-2 text-light fw-bold text-uppercase"><i class="me-3 fa-solid fa-cart-shopping"></i> add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="box position-relative">
+                                    <div class="imag position-relative" data-category="CATEGORY">
+                                        <img src="imgs/xproduct02.png.pagespeed.ic.zbvcFh0rRy.webp" class="d-block w-100 " alt="...">
+                                    </div>
+                                    <h3 class="fw-bold prod-name">Product Name Here</h3>
+                                    <p class="prod-price fw-bold fs-5">$980.00</p>
+                                    <div class="favorite pt-3 pb-3 text-center"><i class="fa-solid fa-heart fs-5" title="Add to favorite"></i></div>
+                                    <div class="add-cart w-100 text-center position-absolute p-2">
+                                        <button class="w-75 rounded-pill p-2 text-light fw-bold text-uppercase"><i class="me-3 fa-solid fa-cart-shopping"></i> add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="box position-relative">
+                                    <div class="imag position-relative" data-new="NEW" data-category="CATEGORY">
+                                        <img src="imgs/xproduct04.png.pagespeed.ic.Nmz_g7OX-H.png" class="d-block w-100 " alt="...">
+                                    </div>
+                                    <h3 class="fw-bold prod-name">Product Name Here</h3>
+                                    <p class="prod-price fw-bold fs-5">$980.00</p>
+                                    <div class="favorite pt-3 pb-3 text-center"><i class="fa-solid fa-heart fs-5" title="Add to favorite"></i></div>
+                                    <div class="add-cart w-100 text-center position-absolute p-2">
+                                        <button class="w-75 rounded-pill p-2 text-light fw-bold text-uppercase"><i class="me-3 fa-solid fa-cart-shopping"></i> add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="box position-relative">
+                                    <div class="imag position-relative" data-new="-25%" data-category="CATEGORY">
+                                        <img src="imgs/xproduct05.png.pagespeed.ic.THq_JuCB2a.webp" class="d-block w-100 " alt="...">
+                                    </div>
+                                    <h3 class="fw-bold prod-name">Product Name Here</h3>
+                                    <p class="prod-price fw-bold fs-5">$980.00</p>
+                                    <div class="favorite pt-3 pb-3 text-center"><i class="fa-solid fa-heart fs-5" title="Add to favorite"></i></div>
+                                    <div class="add-cart w-100 text-center position-absolute p-2">
+                                        <button class="w-75 rounded-pill p-2 text-light fw-bold text-uppercase"><i class="me-3 fa-solid fa-cart-shopping"></i> add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev caros" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next caros" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End porducts -->
+    <!-- Start HOT DEAL  -->
+    <section class="pt-5 pb-5 hot-deal" id="hot-deal">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                        <li class="timer-item rounded-circle text-light ms-1 me-1">
+                            <h3 class="fw-bold mb-0 days">89</h3>
+                            <span class="text-uppercase mt-0">days</span>
+                        </li>
+                        <li class="timer-item rounded-circle text-light ms-1 me-1">
+                            <h3 class="fw-bold mb-0 hours">23</h3>
+                            <span class="text-uppercase mt-0">hours</span>
+                        </li>
+                        <li class="timer-item rounded-circle text-light ms-1 me-1">
+                            <h3 class="fw-bold mb-0 minutes">34</h3>
+                            <span class="text-uppercase mt-0">mins</span>
+                        </li>
+                        <li class="timer-item rounded-circle text-light ms-1 me-1">
+                            <h3 class="fw-bold mb-0 seconds">59</h3>
+                            <span class="text-uppercase mt-0">secs</span>
+                        </li>
+                    </ul>
+                    <h2 class="fw-bold text-uppercase mt-4">hot deal</h2>
+                    <p class="fs-5">NEW COLLECTION UP TO 50% OFF</p>
+                    <div class="button">
+                        <button class="text-light fw-bold text-uppercase rounded-pill ps-4 pe-4 pt-2 pb-2">shop now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End HOT DEAL  -->
+    <!-- Start Top Selling -->
+    <!-- End Top Selling -->
+    <!-- Start contact -->
+    <section class="pt-5 pb-5 contact" id="contact">
+        <div class="container">
+            <div class="box text-center">
+                <p class="fs-4">Sign up for the <strong>NEWSLETTER</strong></p>
+            </div>
+            <div class="subs w-50 ms-auto d-flex mt-5 position-relative">
+                    <input class="w-75" type="email" placeholder="Enter Your Email">
+                    <input class="text-white fw-bold fs-6 w-25" type="submit" value="Subscribe">
+                    <div class="email-icon position-absolute"><i class="fa-regular fa-envelope"></i></div>
+            </div>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- end contact -->
+    <!-- Start Footer -->
+    <footer class="pt-5">
+        <div class="container">
+            <div class="row text-start">
+                <div class="col-lg-3 col-md-6 mb-sm-5 mb-lg-0 text-light">
+                    <h4 class="mb-4 fw-bold text-uppercase fs-5">about us</h4>
+                    <p class="text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                    <div><a class="d-block text-white-50 pt-2 pb-2" href="#"><i class="fa-solid fa-location-dot"></i> &ThinSpace; 1734 Stonecoal Road</a></div>
+                    <div><a class="d-block text-white-50 pt-2 pb-2" href="#"><i class="fa-solid fa-phone"></i> &ThinSpace; +021-95-51-84</a></div>
+                    <div><a class="d-block text-white-50 pt-2 pb-2" href="#"><i class="fa-regular fa-envelope"></i> &ThinSpace; email@gmail.com</a></div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-sm-5 mb-lg-0 text-light">
+                    <h4 class="mb-4 fw-bold text-uppercase fs-5">Categories</h4>
+                    <div><a class="d-block text-white-50 pt-2 pb-2" href="#">Hot Deals</a></div>
+                    <div><a class="d-block text-white-50 pt-2 pb-2" href="#">Laptops</a></div>
+                    <div><a class="d-block text-white-50 pt-2 pb-2" href="#">Smartphones</a></div>
+                    <div><a class="d-block text-white-50 pt-2 pb-2" href="#">Cameras</a></div>
+                    <div><a class="d-block text-white-50 pt-2 pb-2" href="#">Accessories</a></div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-sm-5 mb-md-0 text-light">
+                    <h4 class="mb-4 fw-bold text-uppercase fs-5">information</h4>
+                    <div><a class="d-block text-white-50 pt-2 pb-2" href="#">About Us</a></div>
+                    <div><a class="d-block text-white-50 pt-2 pb-2" href="#">Contact Us</a></div>
+                    <div><a class="d-block text-white-50 pt-2 pb-2" href="#">Privacy Policy</a></div>
+                    <div><a class="d-block text-white-50 pt-2 pb-2" href="#">Orders and Returns</a></div>
+                    <div><a class="d-block text-white-50 pt-2 pb-2" href="#">Terms & Conditions</a></div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-light">
+                    <h4 class="mb-4 fw-bold text-uppercase fs-5">service</h4>
+                    <div><a class="d-block text-white-50 pt-2 pb-2" href="#">My Account</a></div>
+                    <div><a class="d-block text-white-50 pt-2 pb-2" href="#">View Cart</a></div>
+                    <div><a class="d-block text-white-50 pt-2 pb-2" href="#">Wishlist</a></div>
+                    <div><a class="d-block text-white-50 pt-2 pb-2" href="#">Track My Order</a></div>
+                    <div><a class="d-block text-white-50 pt-2 pb-2" href="#">Help</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer pb-5 pt-3 mt-5">
+            <div class="container mt-4">
+                <div class="row text-center">
+                    <ul class="col-12 footer-payment d-flex justify-content-center">
+                        <li><a href="#"><i class="fa-brands fa-cc-visa"></i></a></li>
+                        <li><a href="#"><i class="fa fa-credit-card"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-cc-paypal"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-cc-discover"></i></a> </li>               
+                    </ul>
+                    <span class="copyright text-light">
+                        Copyright ©2022 All rights reserved | This template is made with <i class="fa-regular fa-heart"></i> by <a class="text-white-50 fs-6" href="#">Colorlib</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/electro.js"></script>
+</body>
+</html>
+
+
+
+
+
+
