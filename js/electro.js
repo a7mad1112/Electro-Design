@@ -1,5 +1,5 @@
 
-localStorage.clear();
+// localStorage.clear();
 /* Add Top SELLING Section */
 let myCarousal = document.querySelector(".porducts").cloneNode(1);
 let contact = document.getElementById('contact');
@@ -47,6 +47,7 @@ hearts.forEach((heart, index) => {
         likeNumber.setAttribute("data-number", productLiked);
 }});
 function addFromLocalStorage () {
+    window.localStorage.removeItem(`aa`);
     productLiked = localStorage.length;
     likeNumber.setAttribute("data-number", productLiked);
     for(let i = 0; i < localStorage.length; i++)
